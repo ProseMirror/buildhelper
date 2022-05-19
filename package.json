@@ -1,0 +1,25 @@
+{
+  "name": "@prosemirror/buildhelper",
+  "version": "0.1.0",
+  "description": "Helper package to build ProseMirror packages",
+  "author": {
+    "name": "Marijn Haverbeke",
+    "email": "marijnh@gmail.com",
+    "url": "http://marijnhaverbeke.nl"
+  },
+  "bin": {
+    "pm-buildhelper": "bin/pm-buildhelper.js",
+    "pm-runtests": "bin/pm-runtests.js"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prosemirror/buildhelper.git"
+  },
+  "dependencies": {
+    "@babel/core": "^7.17.12",
+    "@babel/preset-env": "^7.17.12",
+    "@marijn/buildtool": "^0.1.0",
+    "@marijn/testtool": "^0.1.0"
+  }
+}
