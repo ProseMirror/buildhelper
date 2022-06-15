@@ -12,7 +12,6 @@ if (args.length != 1) {
 }
 
 build(resolve(args[0]), {
-  tsOptions: {allowSyntheticDefaultImports: true},
   expandLink: anchor => "https://prosemirror.net/docs/ref/#" + anchor,
   cjsOutputPlugin: () => ({
     name: "babel-output",
