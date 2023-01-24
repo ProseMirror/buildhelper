@@ -4,7 +4,7 @@
   "description": "Helper package to build ProseMirror packages",
   "author": {
     "name": "Marijn Haverbeke",
-    "email": "marijnh@gmail.com",
+    "email": "marijn@haverbeke.berlin",
     "url": "http://marijnhaverbeke.nl"
   },
   "bin": {
