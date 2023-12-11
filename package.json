@@ -17,9 +17,9 @@
     "url": "https://github.com/prosemirror/buildhelper.git"
   },
   "dependencies": {
-    "@babel/core": "^7.17.12",
-    "@babel/preset-env": "^7.17.12",
-    "@marijn/buildtool": "^0.1.0",
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "@marijn/buildtool": "^1.0.0",
     "@marijn/testtool": "^0.1.0"
   }
 }
