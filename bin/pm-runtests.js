@@ -12,7 +12,7 @@ let dirs = [], browsers = [], grep = null, server = false
 for (let i = 2, arg; (arg = process.argv[i]) != null; i++) {
   if (arg == "--chrome") browsers.push("chrome")
   else if (arg == "--firefox") browsers.push("firefox")
-  else if (arg == "--help") exit(0)
+  else if (arg == "--help") process.exit(0)
   else if (arg == "--grep") grep = process.argv[++i]
   else if (arg == "--server") server = true
   else if (arg[0] == "-") help()
