@@ -4,7 +4,7 @@ The scripts (`pm-buildhelper` and `pm-runtests`) in this package build
 and test packages that conform to the conventions of the various
 ProseMirror packages.
 
-`pm-buildhelper` taks the package's main file as argument and does the
+`pm-buildhelper` takes the package's main file as argument and does the
 following:
 
  - Mangle the code to convert our `///` doc comments to `/** */`
