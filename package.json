@@ -19,7 +19,7 @@
   "dependencies": {
     "@babel/core": "^7.23.5",
     "@babel/preset-env": "^7.23.5",
-    "@marijn/buildtool": "^1.0.0",
+    "@marijn/buildtool": "^1.1.0",
     "@marijn/testtool": "^0.1.0"
   }
 }

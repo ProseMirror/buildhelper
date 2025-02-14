@@ -13,6 +13,7 @@ if (args.length != 1) {
 
 build(resolve(args[0]), {
   expandLink: anchor => "https://prosemirror.net/docs/ref/#" + anchor,
+  expandRootLink: "https://prosemirror.net/",
   cjsOutputPlugin: () => ({
     name: "babel-output",
     renderChunk: code => transform(code, {presets: [require('@babel/preset-env')], comments: false}).code
