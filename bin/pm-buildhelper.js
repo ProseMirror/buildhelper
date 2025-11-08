@@ -3,15 +3,20 @@
 const {build} = require("@marijn/buildtool")
 const {resolve} = require("path")
 const {transform} = require("@babel/core")
+const {parseArgs} = require("node:util")
 
-let args = process.argv.slice(2)
+const {values, positionals} = parseArgs({
+  options: {"type-check": {type: "boolean", default: false}},
+  allowPositionals: true
+})
 
-if (args.length != 1) {
-  console.log("Usage: pm-buildhelper src/mainfile.ts")
+if (positionals.length != 1) {
+  console.log("Usage: pm-buildhelper [--type-check] src/mainfile.ts")
   process.exit(1)
 }
 
-build(resolve(args[0]), {
+build(resolve(positionals[0]), {
+  typeCheck: values["type-check"],
   expandLink: anchor => "https://prosemirror.net/docs/ref/#" + anchor,
   expandRootLink: "https://prosemirror.net/",
   cjsOutputPlugin: () => ({
