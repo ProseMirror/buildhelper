@@ -12,6 +12,8 @@ following:
 
  - Run the TypeScript compiler, catching the output in memory.
 
+ - Fails the build on TypeScript errors with the `--type-check` flag.
+
  - Run rollup and rollup-plugin-dts on the result to emit the CommonJS
    and ES modules, as well as a bundled `.d.ts` file, to `dist/`.
 
