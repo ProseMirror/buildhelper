@@ -1,3 +1,5 @@
+**This repository has moved to https://code.haverbeke.berlin/prosemirror/buildhelper**
+
 Helper scripts to build and test ProseMirror packages.
 
 The scripts (`pm-buildhelper` and `pm-runtests`) in this package build
